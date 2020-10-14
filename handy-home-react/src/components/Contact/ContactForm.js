@@ -70,12 +70,21 @@ export default class ContactForm extends React.Component {
 
     event.preventDefault();
 
-    emailjs.sendForm('gmail', 'template_rpca22a', event.target, 'user_A0j0Yh8XiRPpegCX2JaYp')
-    .then((result) => {
-        console.log(result.text);
-    }, (error) => {
-        console.log(error.text);
-    });
+    emailjs
+      .sendForm(
+        "gmail",
+        "template_rpca22a",
+        event.target,
+        "user_A0j0Yh8XiRPpegCX2JaYp"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   }
 
   render() {
@@ -131,7 +140,7 @@ export default class ContactForm extends React.Component {
               </div>
 
               <div className="position-relative form-group">
-                <input
+                <select
                   name="subject"
                   type="text"
                   className="text-field form-control mb-3 bg_grey border-0 py-1"
@@ -139,7 +148,21 @@ export default class ContactForm extends React.Component {
                   value={this.state.subject}
                   onChange={this.handleChange}
                   onBlur={this.handleBlur}
-                />
+                  required="required"
+                >
+                  <option value="" disabled selected hidden>Subject</option>
+                  <option value="Debris Removal">Debris Removal</option>
+                  <option value="Hauling">Hauling</option>
+                  <option value="Interior Painting">Interior Painting</option>
+                  <option value="Exterior Painting">Exterior Painting</option>
+                  <option value="Counter Refinishing">Counter Refinishing</option>
+                  <option value="Minor Electrical">Minor Electrical</option>
+                  <option value="Plumbing">Plumbing</option>
+                  <option value="Assembly Services">Assembly Services</option>
+                  <option value="Home Repair">Home Repair</option>
+                  <option value="Other">Other...</option>
+                </select>
+
               </div>
 
               <div className="position-relative form-group">
@@ -178,6 +201,7 @@ export default class ContactForm extends React.Component {
               <li className="list-group-item">Name: {this.state.name}</li>
               <li className="list-group-item">Mobile: {this.state.phone}</li>
               <li className="list-group-item">Email: {this.state.email}</li>
+              <li className="list-group-item">Subject: {this.state.subject}</li>
               <li className="list-group-item">Message: {this.state.message}</li>
             </ul>
             <Link to="/">Back to Home</Link>

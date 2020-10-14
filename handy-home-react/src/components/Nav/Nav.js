@@ -15,7 +15,7 @@ function MyNav() {
     <div className="nav">
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
         <Navbar.Brand href="/" component={Home}>
-          Home
+          Handy Home
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
