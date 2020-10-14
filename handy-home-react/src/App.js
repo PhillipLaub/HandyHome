@@ -15,7 +15,7 @@ function App() {
       <MyNav />
       <div className="nav-break"></div>
       <Switch>
-        <Route path="/home" component={Home}/>
+        <Route exact path="/" component={Home}/>
         <Route path="/pricing" component={Pricing} />
         <Route path="/services" component={Services}/>
         <Route path ="/contact" component={Contact}/>

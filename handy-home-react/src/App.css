@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   height:100%;
+  background-color: gray;
 }
 
 .nav-break{
@@ -12,7 +13,7 @@
 
 .footer {
   /* for sticky footer, use absolute */
-  position: absolute;
+  /* position: absolute; */
   bottom: 0;
   width: 100%;
   height: 60px;
@@ -24,4 +25,8 @@
   width: auto;
   max-width: 680px;
   padding: 0 15px;
+}
+
+.card{
+  margin:0 !important;
 }

@@ -14,7 +14,7 @@ function MyNav() {
   return (
     <div className="nav">
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
-        <Navbar.Brand href="/home" component={Home}>
+        <Navbar.Brand href="/" component={Home}>
           Home
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
