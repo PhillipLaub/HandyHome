@@ -1,9 +1,23 @@
 .contact{
-    min-height:80vh;
-    background:grey;
+    /* min-height:80vh;
+    background:#a4b3b6;
     color:white;
     padding-left: 5%;
     padding-right:5%;
+    padding-bottom:5%; */
+
+    height:90vh;
+    background:#a4b3b6;
+    color:white;
+    background: url('../../assets/fencing2.jpg') no-repeat center center fixed; 
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-top: 10%;
+    
 
 }
 
@@ -43,4 +57,10 @@
 
   .card{
       margin-top:1rem !important;
+      margin-bottom:1rem !important;
+  }
+
+  .form-container{
+    margin-left:5%;
+    margin-right:5%;
   }

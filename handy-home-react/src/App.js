@@ -13,7 +13,7 @@ function App() {
     <Router>
     <div className="App">
       <MyNav />
-      <div className="nav-break"></div>
+      
       <Switch>
         <Route exact path="/" component={Home}/>
         <Route path="/pricing" component={Pricing} />
@@ -22,7 +22,7 @@ function App() {
       </Switch>
       <footer className="footer">
         <div className="container">
-          <span>Footer</span>
+          <span></span>
         </div>
       </footer>
     </div>

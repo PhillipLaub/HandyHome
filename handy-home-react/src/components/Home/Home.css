@@ -1,5 +1,57 @@
 .home{
-    height:80vh;
-    background:grey;
+    height:90vh;
+    background:#a4b3b6;
     color:white;
+    background: url('../../assets/fencing2.jpg') no-repeat center center fixed; 
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-top:5%;
+
+}
+
+.home-container{
+    /* background:#a4b3b6; */
+    background:#422f89;
+    border-radius: 20px;
+    opacity:.9;
+    margin-top:10%;
+    padding:10%;
+
+}
+
+.email-link{
+    text-decoration: none;
+    color:white;
+}
+
+@media only screen and (max-device-width: 480px) {
+    .home{
+        height:90vh;
+        background:#a4b3b6;
+        color:white;
+        background: url('../../assets/1.jpg') no-repeat center center fixed; 
+        background-repeat: no-repeat;
+        background-position: center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    
+    }
+
+    .home-container{
+        margin-left:5%;
+        margin-right:5%;
+        margin-top:25%;
+        padding:10%;
+    }
+
+    .row{
+        margin-left:0;
+        margin-right:0;
+    }
 }

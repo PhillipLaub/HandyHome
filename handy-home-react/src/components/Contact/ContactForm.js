@@ -90,8 +90,9 @@ export default class ContactForm extends React.Component {
   render() {
     if (!this.state.thankyou) {
       return (
-        <div className="card box_shw2 border-0 px-3 rounded-2 mb-3 w_500 py-4 mx-auto mt-5">
-          <div className="card-header bg-white f_20_22 border-0 text-center">
+        <div className="card box_shw2 border-0 px-3 rounded-2 mb-3 w_500 py-4 mx-auto">
+          <h4>Contact Us</h4>
+          <div className="card-header f_20_22 border-0 text-center">
             {this.props.title}
           </div>
           <div className="card-body">
@@ -150,7 +151,7 @@ export default class ContactForm extends React.Component {
                   onBlur={this.handleBlur}
                   required="required"
                 >
-                  <option value="" disabled selected hidden>Subject</option>
+                  <option value="" disabled  hidden>Subject</option>
                   <option value="Debris Removal">Debris Removal</option>
                   <option value="Hauling">Hauling</option>
                   <option value="Interior Painting">Interior Painting</option>

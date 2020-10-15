@@ -13,7 +13,7 @@ import Contact from "../Contact/Contact";
 function MyNav() {
   return (
     <div className="nav">
-      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
+      <Navbar collapseOnSelect expand="lg"  fixed="top" className="navbar-style">
         <Navbar.Brand href="/" component={Home}>
           Handy Home
         </Navbar.Brand>

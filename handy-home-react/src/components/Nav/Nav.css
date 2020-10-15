@@ -1,4 +1,24 @@
 .nav{
     height:5vh;
     /* margin-bottom:48px !important; */
+    
+}
+
+.navbar-style{
+    background-color: #d93f87 !important;
+
+}
+
+.navbar-brand{
+    color:white !important;
+    font-size: 1.5rem !important;
+}
+
+.navbar-toggler{
+    background-color:#B32366 !important;
+}
+
+.nav-link{
+    color:white !important;
+    font-size: larger;
 }
